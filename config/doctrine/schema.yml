@@ -10,11 +10,10 @@ Category:
 Post:
   columns:
     title: { type: string(255), notblank: true }
-    author_id: { type: integer, notnull: true }
     category_id: { type: integer }
     body: { type: string(5000), notblank: true }
+    published_at: { type: datetime }
   relations:
-    Author: { class: sfGuardUser, local: author_id, foreign: id, type: one, foreignType: many, foreignAlias: Posts }
     Category: { class: Category, local: category_id, foreign: id, type: one, foreignType: many, foreignAlias: Posts }
     
     

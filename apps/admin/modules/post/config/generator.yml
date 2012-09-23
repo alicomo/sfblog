@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Post
+    theme:                 redminish
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          post
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        actions:
+          _new: ~
+          _export: { action: export }
+        display: [title, category, created_at, creator, published_at]
+        object_actions:
+          _edit: ~
+          _delete: ~
+          _publish: { action: publish }
+      filter:  ~
+      form: ~
+#        display:
+#          "Details": [title]
+#          "Content": [body]
+      edit:    ~
+      new:     ~

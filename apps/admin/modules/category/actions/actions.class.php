@@ -39,5 +39,22 @@ class categoryActions extends autoCategoryActions
         $system_config =  sfConfig::get('app_system_config');
        print_r($system_config); exit;
     }
+    
+    public function executeAjax(sfWebRequest $request)
+  {
+//    $this->getResponse()->setContentType('application/json');
+//    $categories = Doctrine_Query::create()
+//                    ->form('Category c')
+//                    ->where('c.name LIKE ?', '%'.$request->getParameter('q').'%')
+//                    ->limit($request->getParameter('limit'))
+//                    ->orderBy('c.name')
+//                    ->execute();
+    $category = new Category();
+    $category->setName('some');
+    $category->setJoke('some');
+    $category->save();
+    return $this->renderText(json_encode($category->toArray()));  
+
+  }
 
 }
