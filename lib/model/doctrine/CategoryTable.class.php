@@ -16,4 +16,13 @@ class CategoryTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Category');
     }
+    
+    public function getAllWithoutSymfony(Doctrine_Query $q) 
+    {
+       $alisas = $q->getRootAlias();
+        
+       //$q->andWhere($alisas.'.name LIKE ?', 'Symfony%');
+       
+       return $q;
+    }
 }

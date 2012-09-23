@@ -13,12 +13,28 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
-      list:    
-        display: [name, created_at, updated_at]
+      fields:  
+        name: {label: Category}
+      list:
+        title: Catgeories
+        display: [name, created_at, author]
         object_actions:
           _edit: ~
-      filter:  ~
-      form:    ~
-      edit:    ~
+          _deactivate: ~
+        actions: 
+          _add_category: { label: Add Category, action: new }
+          _export: { action: export }
+        max_per_page: 5
+        table_method: getAllWithoutSymfony
+      filter:  
+        display: [name, author]
+      form:    
+        display: [name]
+      edit:    
+        title: 'Edit Group'
+        display: [name]
+        actions: 
+          _save: ~
+          _list: { label: Go Back }
+          _approve: { action: approve }
       new:     ~

@@ -12,4 +12,8 @@
  */
 class Category extends BaseCategory
 {
+    public function getAuthor()
+    {
+        return $this->getCreator();
+    }
 }

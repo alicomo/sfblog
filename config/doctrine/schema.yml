@@ -1,6 +1,7 @@
 actAs: 
     Timestampable: ~
     SoftDelete: ~
+    Signable: ~
     
 Category:
   columns:

@@ -8,3 +8,8 @@ all:
     menu:
       dashboard:   { name: Dashboard, route: dashboard }
       
+  .array:
+    system_config:
+      cpu: Intel Core i3
+      ram: 3GB
+      hd: 300GB
