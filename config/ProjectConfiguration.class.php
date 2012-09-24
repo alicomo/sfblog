@@ -12,5 +12,6 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins('sfRedminishAdminPlugin');
     $this->enablePlugins('sfDoctrineActAsSignablePlugin');
     $this->enablePlugins('sfFormExtraPlugin');
+    $this->enablePlugins('sfAdminThemejRollerPlugin');
   }
 }

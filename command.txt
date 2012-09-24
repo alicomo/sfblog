@@ -1,0 +1,117 @@
+  908  gedit msad
+  909  sudo gedit sfblog
+  910  ls
+  911  sudo a2ensite sfblog
+  912  sudo gedit sfblog
+  913  sudo service apache2 reload
+  914  sudo gedit /etc/hosts
+  915  cd projects/ilythica/
+  916  cd ..
+  917  cd msad/
+  918  git stash
+  919  cd
+  920  cd projects/
+  921  git clone git@github.com:alicomo/sfblog.git
+  922  cd sfblog/
+  923  php lib/vendor/symfony/data/bin/symfony generate:project
+  924  php lib/vendor/symfony/data/bin/symfon
+  925  ./symfony cc
+  926  ./symfony configure:database mysql:"host=localhost;dbname=sfblog" root illuali
+  927  clear
+  928  history > sfnew.txt
+  929  gedit sfnew.txt
+  930  ./symfony generate:app frontend
+  931  ./symfony cc
+  932  clear
+  933  history > ~/sfinstall.txt
+  934  ./symfony generate:app admin
+  935  rm -rf cache/*
+  936  ./symfony project:permissions
+  937  ./symfony list
+  938  ./symfony help plugin
+  939  ./symfony help plugin:install
+  940  ./symfony help generate:project
+  941  ./symfony plugin:install sfDoctrineGuardPlugin
+  942  ./symfony doctrine:build --all --and-load
+  943  ./symfony cc
+  944  ./symfony guard:create-user 
+  945  ./symfony guard:create-user --is-super-admin ali@shaduli.com ali pass
+  946  ./symfony doc:build --all --and-load
+  947  ./symfony cc
+  948  symfony plugin:install sfRedminishAdminPlugin
+  949  ./symfony plugin:install sfRedminishAdminPlugin
+  950  ./symfony plugin:install sfRedminishAdminPlugin  --stability=beta
+  951  ./symfony cc
+  952  symfony plugin:publish-assets
+  953  ./symfony plugin:publish-assets
+  954  ./symfony cc
+  955  ./symfony guard:create-user --is-super-admin ali@shaduli.com ali pass
+  956  ./symfony doc:generate-admin admin --module="category" Category 
+  957  ./symfony cc
+  958  git add .
+  959  git commit -am "scaffolding finished"
+  960  git push origin master
+  961  cd
+  962  gedit sfinstall.txt 
+  963  history > newcommands.txt
+  964  gedit newcommands.txt 
+  965  cd projects/sfblog/
+  966  ./symfony cc
+  967  ./symfony plugin:publish-assets
+  968  ./symfony cc
+  969  cd
+  970  cd projects/
+  971  git clone git@github.com:alicomo/ciev2.git
+  972  cd sfblog/
+  973  ./symfony cc
+  974  ./symfony doctrine:build --all --and-load
+  975  ./symfony cc
+  976  ./symfony guard:create-user --is-super-admin ali@shaduli.com ali pass
+  977  ./symfony cc
+  978  git add .
+  979  git commit -a -m "day 2 changes"
+  980  git push origin master
+  981  ./symfony doctrine:generate-admin --module=post Post 
+  982  ./symfony doctrine:generate-admin admin --module=post Post 
+  983  ./symfony doctrine:data-dump
+  984  ./symfony doc:build --all --and-load
+  985  ./symfony cc
+  986  ./symfony doc:build --all --and-load
+  987  ./symfony plugin:install sfFormExtraPlugin
+  988  ./symfony publish-assets
+  989  ./symfony plugin:publish-assets
+  990  ./symfony cc
+  991  git add .
+  992  git commit -a -m "end of day 02"
+  993  git push origin master
+  994  cd projects/
+  995  git clone git@github.com:alicomo/gsa.git
+  996  sudo apt-get install pdfedit
+  997  cd projects/sfblog/
+  998  ./symfony cc
+  999  cd ..
+ 1000  svn checkout http://svn.jobeet.org/doctrine
+ 1001  sudo apt-get install subversion
+ 1002  svn checkout http://svn.jobeet.org/doctrine
+ 1003  cd sfblog/
+ 1004  ./symfony plugin:install sfAdminThemejRollerPlugin
+ 1005  ./symfony plugin:install sfAdminThemejRollerPlugin --stability=beta
+ 1006  ./symfony cc
+ 1007  ./symfony plugin:publish-assets
+ 1008  ./symfony cc
+ 1009  rm -rf cache/*
+ 1010  ./symfony cc
+ 1011  rm -rf cache/*
+ 1012  ./symfony cc
+ 1013  rm -rf cache/*
+ 1014  ./symfony cc
+ 1015  ./symfony doc:build --all --and-load
+ 1016  ./symfony cc
+ 1017  ./symfony guard:create-user ali@shaduli.com zend pass
+ 1018  ./symfony guard:create-user ali@shaduli2.com zend pass
+ 1019  ./symfony cc
+ 1020  ./symfony generate:module admin default
+ 1021  php test:functional admin categoryActions
+ 1022  ./symfony test:functional admin categoryActions
+ 1023  ./symfony cc
+ 1024  history > command.txt

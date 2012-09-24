@@ -15,5 +15,9 @@ class CategoryForm extends BaseCategoryForm
       unset($this['created_at'],$this['updated_at'], $this['deleted_at'], $this['created_by'],$this['updated_by']);
       
       //$this->widgetSchema['system'] = new sfWidgetFormChoice(array('choices' => sfConfig::get('app_system_config') ));
+      //$this->getWidgetSchema()->setNameFormat('group[%s]');
+      
+      $this->validatorSchema['name']->setMessage('invalid', 'Number is not allowed');
+      $this->validatorSchema['name']->setMessage('required', 'Oops What are you doing................!');
   }
 }

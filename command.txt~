@@ -1,0 +1,1000 @@
+   25  sudo gedit /etc/hosts
+   26  sudo mkdir -p /usr/lib/jvm/jre1.7.0
+   27  sudo ~/Downloads/jre1.7.0_03/* /usr/lib/jvm/jre1.7.0/
+   28  sudo cp ~/Downloads/jre1.7.0_03/* /usr/lib/jvm/jre1.7.0/
+   29  sudo mv ~/Downloads/jre1.7.0_03/* /usr/lib/jvm/jre1.7.0/
+   30  sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jre1.7.0/bin/java 0
+   31  mkdir ~/.mozilla/plugins
+   32  ln -s /usr/lib/jvm/jre1.7.0/lib/amd64/libnpjp2.so ~/.mozilla/plugins/
+   33  sh Downloads/netbeans-7.1.1-ml-php-linux.sh 
+   34  php lib/vendor/symfony/data/bin/symfony generate-project sfZiceAdminThemePlugin
+   35  php lib/vendor/symfony/data/bin/symfony generate:project sfZiceAdminThemePlugin
+   36  ./symfony generate:app admin 
+   37  ./symfony doc:build --all --and-load
+   38  ./symfony doc:generate-admin admin --module="students" Student
+   39  ./symfony cc
+   40  rm -rf cache/*
+   41  ./symfony cc
+   42  ./symfony plugin:publish-assets
+   43  rm -rf cache/*
+   44  ./symfony cc
+   45  sudo kill 3514
+   46  rm -rf /home/shaduli/.config/google-chrome/SingletonLock
+   47  rm -rf cache/*
+   48  cd /etc/apache2/sites-available/
+   49  ls
+   50  sudo cp os zice
+   51  sudo gedit zice
+   52  sudo a2ensite zice
+   53  sudo service apache2 restart
+   54  sudo /etc/hosts
+   55  sudo gedit /etc/hosts
+   56  apt-get install mongodb-10gen
+   57  pecl install mongo
+   58  gedit /etc/php5/apache2/php.ini 
+   59  gedit /etc/php5/cli/php.ini 
+   60  service apache2 restart
+   61  ./symfony configure:database mysql:"host=localhost;dbname=ilythica" root illualidb
+   62  git submodule init
+   63  git submodule update
+   64  cd lib/vendor/doctrine-mongodb-odm/
+   65  ls
+   66  curl -s http://getcomposer.org/installer | php
+   67  apt-get install curl
+   68  cd ..
+   69  chown -R shaduli:shaduli doctrine-mongodb-odm
+   70  ls
+   71  ls -l
+   72  cd
+   73  exit
+   74  sudo bash
+   75  cd lib/vendor/doctrine-mongodb-odm/
+   76  ls
+   77  wget http://packagist.org/packages-dev-d.json
+   78  cd vendor/
+   79  ls
+   80  cd doctrine/
+   81  ls
+   82  git clone git://github.com/doctrine/common.git
+   83  sudo apt-get install gvim
+   84  sudo apt-get install vim-gtk
+   85  vim
+   86  vim-gtk
+   87  vim
+   88  vim projects/ilythica/
+   89  gvim
+   90  cd projects/ilythica/
+   91  git pull git@github.com:ksrinivasancomo/ilythica.git invoicing
+   92  ls -l
+   93  ls -l lib/vendor/
+   94  curl -s http://getcomposer.org/installer | php
+   95  php composer.phar install
+   96  ls
+   97  ls -l
+   98  rm composer.phar 
+   99  cd lib/vendor/doctrine-mongodb-odm/
+  100  curl -s http://getcomposer.org/installer | php
+  101  ls
+  102  curl -s http://getcomposer.org/installer | php
+  103  php composer.phar install
+  104  php composer.phar install --dry-run
+  105  ls
+  106  rm packages-dev-d.json 
+  107  php composer.phar install
+  108  ./symfony configure:database mysql:"host=localhost;dbname=ilythica" root illulalidb
+  109  ./symfony doc:build --all --and-load
+  110  ./symfony configure:database mysql:"host=localhost;dbname=ilythica" root illulali
+  111  ./symfony doc:build --all --and-load
+  112  mkdir log
+  113  mkdir cache
+  114  ./symfony cc
+  115  rm -rf cache/*
+  116  cd lib/vendor/doctrine-mongodb-odm/
+  117  php composer.phar install
+  118  ls
+  119  ls -l
+  120  ls -l lib
+  121  cd lib/
+  122  ls
+  123  cd Doctrine/
+  124  ls
+  125  ls -l
+  126  cd..
+  127  cd ..
+  128  ls -l
+  129  cd vendor/
+  130  ls
+  131  ls -l
+  132  cd doctrine/
+  133  ls
+  134  ls -l
+  135  cd ../../../..
+  136  cd vendor/
+  137  ls
+  138  cd doctrine-mongodb-odm/
+  139  ls
+  140  php composer.phar install
+  141  sudo cd vendor/doctrine/mongodb/lib/vendor/doctrine-common/
+  142  ls -l vendor/doctrine/mongodb/lib/vendor/doctrine-common
+  143  git submodule init
+  144  git submodule updte
+  145  mkdir -p vendor/doctrine/common
+  146  php composer.phar install
+  147  cd vendor/
+  148  ls -l 
+  149  cd composer/
+  150  ls
+  151  cd ..
+  152  cd symfony/
+  153  ls
+  154  cd ..
+  155  cd..
+  156  ls
+  157  cd ..
+  158  l
+  159  ls
+  160  gedit  composer.json 
+  161  cd vendor/
+  162  ls
+  163  cd doctrine/
+  164  ls
+  165  ls -l common
+  166  rm -rf common
+  167  ls
+  168  git clone git://github.com/doctrine/common.git
+  169  cd ../../../..
+  170  cd ..
+  171  ./symfony cc
+  172  git pull git@github.com:ksrinivasancomo/ilythica.git invoicing
+  173  git status
+  174  git add .
+  175  git commit -a -m "sc version of po"
+  176  git pull git@github.com:ksrinivasancomo/ilythica.git invoicing
+  177  git add .
+  178  git push origin invoicing
+  179  git remote add blessed git@github.com:como/ilythica.git
+  180  git remote
+  181  git push blessed invoicing
+  182  ./symfony cc
+  183  rm -rf cache/*
+  184  cd projects/ilythica/
+  185  git pull git@github.com:ksrinivasancomo/ilythica.git invoicing
+  186  cd projects/sfZiceAdminThemePlugin/
+  187  rm -rf cache/*
+  188  sudo a2enmod rewrite
+  189  sudo service apache2 restart
+  190  rm -rf cache/*
+  191  ./symfony plugin:publish-assets
+  192  ./symfony doc:generate-admin admin --module="admissions" Student
+  193  ./symfony cc
+  194  rm -rf cache/*
+  195  ./symfony cc
+  196  rm -rf cache/*
+  197  ./symfony cc
+  198  rm -rf cache/*
+  199  ./symfony cc
+  200  rm -rf cache/*
+  201  ./symfony cc
+  202  rm -rf cache/*
+  203  ./symfony cc
+  204  rm -rf cache/*
+  205  ./symfony cc
+  206  rm -rf cache/*
+  207  git init
+  208  git remote add origin ssh://git@bitbucket.org/shaduli/sfadminziceplugin.git
+  209  git status
+  210  rm -rf .gitignore~
+  211  ls
+  212  ls -a
+  213  git status
+  214  git add .
+  215  git commit -am "bismillah"
+  216  git push -u origin master
+  217  gedit ~/.ssh/id_rsa.pub 
+  218  git push -u origin master
+  219  cd projects/sfZiceAdminThemePlugin/
+  220  rm -rf cache/*
+  221  git status
+  222  git add .
+  223  git commit -am "admin generator part completed"
+  224  git push origin master
+  225  cd projects/sfZiceAdminThemePlugin/
+  226  ./symfony cc
+  227  git pull origin master
+  228  cd projects/sfZiceAdminThemePlugin/
+  229  git pull origin master
+  230  ./symfony doc:build --all --and-lod
+  231  ./symfony doc:build --all --and-load
+  232  ./symfony cc
+  233  rm -rf cache/*
+  234  ./symfony plugin:install sfJqueryReloadedPlugin
+  235  ./symfony plugin:install sfAdminDashPlugin
+  236  ./symfony plugin:install sfAdminDashPlugin --stability="beta"
+  237  ./symfony plugin:publish-assets
+  238  ./symfony cc
+  239  git add .
+  240  git commit -a "wfh"
+  241  git commit -am "wfh"
+  242  git push origin master
+  243  cd projects/sfZiceAdminThemePlugin/
+  244  ./symfony cc
+  245  cd projects/sfZiceAdminThemePlugin/
+  246  ./symfony doc:generate-admin admin --module="dashboard" Student
+  247  ./symfony cc
+  248  rm -rf cache/*
+  249  ./symfony cc
+  250  rm -rf cache/*
+  251  ./symfony cc
+  252  rm -rf cache/*
+  253  git status
+  254  git add .
+  255  git commit -a -m "added _menu partial"
+  256  git push origin master
+  257  cd projects/sfZiceAdminThemePlugin/
+  258  git status
+  259  git add .
+  260  git commit -am "menu style added"
+  261  git push origin master
+  262  cd projects/sfZiceAdminThemePlugin/
+  263  git pull origin master
+  264  ./symfony cc
+  265  sudo gedit /etc/apache2/sites-available/zice
+  266  sudo a2ensite edu
+  267  sudo service apache2 reload
+  268  sudo gedit /etc/hosts
+  269  cd
+  270  sudo gedit /etc/apache2/sites-available/edu
+  271  chmod -R 777 *
+  272  ls
+  273  ls -l
+  274  cd projects/
+  275  sudo chmod -R 777 orbit
+  276  cd eduone/
+  277  php lib/vendor/symfony/data/bin/symfony generate:project edune
+  278  ./symfony cc
+  279  php lib/vendor/symfony/data/bin/symfony generate:project eduone
+  280  php lib/vendor/symfony/data/bin/symfony generate:app admin
+  281  ./symfony cc
+  282  ./symfony plugin:install sfDoctrineGuardPlugin
+  283  sudo gedit /etc/apache2/sites-available/osis
+  284  sudoo a2ensite osis
+  285  sudo a2ensite osis
+  286  sudo service apache2 reload
+  287  sudo gedit /etc/apache2/sites-available/osis
+  288  sudo service apache2 reload
+  289  sudo gedit /etc/hosts
+  290  cd projects/opensis-ce/
+  291  sudo chmod -R 777 *
+  292  cd ../
+  293  sudo chmod -R 777 opensis-ce
+  294  cd eduone/
+  295  ./symfony doc:build-schema
+  296  ./symfony cc
+  297  ./symfony doc:build --all --and-load
+  298  ./symfony cc
+  299  ./symfony doc:generate-admin admin --module="mother_toungue" MotherToungue
+  300  ./symfony doc:generate-admin admin --module="mother_tongue" MotherTongue
+  301  ./symfony doc:generate-admin admin --module="country" Country
+  302  ./symfony doc:generate-admin admin --module="concession_category" ConcessionCategory
+  303  ls -l /etc/apache2/sites-available/
+  304  cp /etc/apache2/sites-available/zice eduone
+  305  ls
+  306  rm -rf eduone
+  307  sudo cp /etc/apache2/sites-available/zice /etc/apache2/sites-available/eduone
+  308  sudo gedit /etc/apache2/sites-available/eduone
+  309  sudo a2ensite eduone
+  310  sudo service apache2 reload
+  311  sudo gedit /etc/hosts
+  312  ./symfony cc
+  313  ./symfony plugin:publish-assets
+  314  rm -rf cache/*
+  315  ./symfony cc
+  316  git status
+  317  sudo gedit /etc/apache2/sites-available/zice
+  318  cd projects/eduone/
+  319  ./symfony doc:build --all --and-load
+  320  ./symfony doc:clean-model-files
+  321  ./symfony cc
+  322  ./symfony doc:generate-admin --module="state" State
+  323  ./symfony doc:generate-admin admin --module="state" State
+  324  ./symfony cc
+  325  ./symfony doc:generate-admin admin --module="guardian" Guardian
+  326  ./symfony cc
+  327  cd projects/ilythica/
+  328  git checkout embedRelation
+  329  git checkout -b embedRelation
+  330  git pull origin embedRelation
+  331  git stash
+  332  git pull origin embedRelation
+  333  ./symfony doc:build --all --and-load
+  334  rm -rf cache/*
+  335  ./symfony doc:build --all --and-load
+  336  symfony plugin:install ahDoctrineEasyEmbeddedRelationsPlugin
+  337  ./symfony plugin:install ahDoctrineEasyEmbeddedRelationsPlugin
+  338  ./symfony plugin:publish-assets
+  339  ./symfony cc
+  340  rm -rf cache/*
+  341  ./symfony cc
+  342  ./symfony doc:generate-admin agent --module="client" Client
+  343  ./symfony cc
+  344  ps 
+  345  cd projects/shaduli.com/
+  346  git init
+  347  cd ..
+  348  cd shaduli.com/
+  349  cp ../symfonylearning/.gitignore .
+  350  ls -a
+  351  gedit .gitignore
+  352  cp app/config/parameters.ini app/config/parameters.ini.sample
+  353  git add .
+  354  git commit -am "bismillah"
+  355  git remote add git@bitbucket.org:shaduli/shaduli.com.git
+  356  git remote add origin git@bitbucket.org:shaduli/shaduli.com.git
+  357  git push -u origin master
+  358  git commit -am "skillset updated"
+  359  git push origin master
+  360  cd projects/
+  361  cd shaduli.com/
+  362  git status
+  363  git add .
+  364  git commit -am "design files added"
+  365  git push origin mster
+  366  git push origin master
+  367  cd projects/shaduli.com/
+  368  git pull origin master
+  369  php app/console cache:clear
+  370  git submodule add git://github.com/l3pp4rd/DoctrineExtensions.git vendor/gedmo-doctrine-extensions
+  371  git submodule add git://github.com/stof/StofDoctrineExtensionsBundle.git vendor/bundles/Stof/DoctrineExtensionsBundle
+  372  php app/console doctrine:generate:entities
+  373  php app/console doctrine:generate:entities ShaduliBlogBundle
+  374  php app/console cache:clear
+  375  php app/console doctrine:generate:entities ShaduliBlogBundle
+  376  cd vendor/gedmo-doctrine-extensions/
+  377  git brnch
+  378  git branch
+  379  git checkout working
+  380  git checkout -b working
+  381  git pull origin driver
+  382  git pull origin drivers
+  383  git checkout master
+  384  git branch -D working
+  385  cd ..
+  386  ls
+  387  cd bundles/
+  388  ls
+  389  cd Stof/
+  390  ls
+  391  cd DoctrineExtensionsBundle/
+  392  ls
+  393  git checkout -b working
+  394  git pull origin 1.0.x
+  395  git checkout master
+  396  git branch -D working
+  397  git fetch origin
+  398  cd ..
+  399  rm -rf DoctrineExtensionsBundle
+  400  cd ..
+  401  rm -rf Stof
+  402  ls
+  403  cd..
+  404  cd ../../
+  405  gedit .gitmodules/
+  406  git rm --cached vendor/stof/StofDoctrineExtensionsBundle
+  407  git rm --cached vendor/Stof/StofDoctrineExtensionsBundle
+  408  git rm --cached vendor/bundles/Stof/StofDoctrineExtensionsBundle
+  409  git rm --cached vendor/Stof/DoctrineExtensionsBundle
+  410  git submodule add git://github.com/stof/StofDoctrineExtensionsBundle.git --branch drivers vendor/bundles/Stof/DoctrineExtensionsBundle
+  411  git submodule add -b 1.0.x git://github.com/stof/StofDoctrineExtensionsBundle.git vendor/bundles/Stof/DoctrineExtensionsBundle
+  412  git rm --cached vendor/bundles/Stof/DoctrineExtensionsBundle
+  413  git submodule add -b 1.0.x git://github.com/stof/StofDoctrineExtensionsBundle.git vendor/bundles/Stof/DoctrineExtensionsBundle
+  414  gedit .gitmodules
+  415  cd vendor/
+  416  ls
+  417  rm -rf gedmo-
+  418  cd ..
+  419  git rm --cached vendor/gedmo-doctrine-extensions
+  420  git submodule add -b 2.2.x git://github.com/l3pp4rd/DoctrineExtensions.git vendor/gedmo-doctrine-extensions
+  421  git submodule init
+  422  git submodule update
+  423  ls
+  424  cd vendor/
+  425  cd gedmo-doctrine-extensions/
+  426  ls
+  427  cd ..
+  428  php app/console cache:clear
+  429  php app/console doctrine:generate:entities ShaduliBlogBundle
+  430  rm src/Shaduli/BlogBundle/Entity/Post.php~
+  431  php app/console doctrine:generate:entities ShaduliBlogBundle
+  432  php app/console doctrine:generate:entity
+  433  php app/console doctrine:generate:entities ShaduliBlogBundle
+  434  php app/console doctrine:generate:crud ShaduliBlogBundle:Category
+  435  php app/console doctrine:generate:crud
+  436  php app/console cache:clear
+  437  php app/console doctrine:create:databse
+  438  php app/console doctrine:database:create
+  439  php app/console doctrine:schema:create
+  440  php app/console doctrine:generate:form
+  441  php app/console doctrine:generate:form ShaduliBlogBundle:Post
+  442  php app/console doctrine:generate:entities ShaduliBlogBundle
+  443  php app/console cache:clear
+  444  git commit -a -m "sluggable and timestampable"
+  445  git push origin master
+  446  cd projects/shaduli.com/
+  447  git status
+  448  git stash
+  449  git push origin master
+  450  git pull origin master
+  451  rm -rf src/Shaduli/BlogBundle/Controller
+  452  rm -rf src/Shaduli/BlogBundle/Entity
+  453  rm -rf src/Shaduli/BlogBundle/Form
+  454  rm -rf src/Shaduli/BlogBundle/Resources/config/doctrine/
+  455  rm -rf src/Shaduli/BlogBundle/Resources/config/doctrine
+  456  rm -rf src/Shaduli/BlogBundle/Resources/config/routing
+  457  rm -rf src/Shaduli/BlogBundle/Resources/views/Category
+  458  rm -rf src/Shaduli/BlogBundle/Resources/views/Post
+  459  rm -rf src/Shaduli/BlogBundle/Tests/Controller
+  460  git status
+  461  git stash
+  462  git pull origin master
+  463  php app/console cache:clear
+  464  php app/console doctrine:schema:update
+  465  php app/console doctrine:schema:update --force
+  466  php app/console doctrine:generate:entity
+  467  php app/console doctrine:generate:entities
+  468  php app/console doctrine:generate:entities ShaduliSiteBundle
+  469  php app/console doctrine:generate:crud
+  470  cd /etc/apache2/sites-available/
+  471  sudo cp shaduli.com wp
+  472  sudo gedit wp
+  473  sudo a2ensite wp
+  474  sudo service apache2 reload
+  475  sudo gedit /etc/hosts
+  476  cd
+  477  cd projects/
+  478  chmod -R 777 wordpress
+  479  cd shaduli.com/
+  480  php app/console doctrine:update:schema
+  481  php app/console doctrine:schema:update --force
+  482  git submodule add http://github.com/yethee/BiplaneEnumBundle.git vendor/bundles/Biplane/EnumBundle
+  483  git submodule add -b 2.0 http://github.com/yethee/BiplaneEnumBundle.git vendor/bundles/Biplane/EnumBundle
+  484  git submodule add http://github.com/yethee/BiplaneEnumBundle.git vendor/bundles/Biplane/EnumBundle
+  485  git submodule update
+  486  rm -rf vendor/bundles/Biplane
+  487  gedit .gitmodules
+  488  git submodule add -b 2.0 http://github.com/yethee/BiplaneEnumBundle.git vendor/bundles/Biplane/EnumBundle
+  489  git submodule add -b http://github.com/yethee/BiplaneEnumBundle.git vendor/bundles/Biplane/EnumBundle
+  490  git submodule add http://github.com/yethee/BiplaneEnumBundle.git vendor/bundles/Biplane/EnumBundle
+  491  git rm --cached vendor/bundles/Biplane/EnumBundle
+  492  git remote rm --cached vendor/bundles/Biplane/EnumBundle
+  493  git rm --cached vendor/bundles/Biplane/EnumBundle
+  494  gedit .gitmodules
+  495  git rm --cached vendor/bundles/Biplane/EnumBundle
+  496  rm -rf vendor/bundles/Biplane
+  497  git rm --cached vendor/bundles/Biplane
+  498  git submodule add http://github.com/yethee/BiplaneEnumBundle.git vendor/bundles/Biplane/EnumBundle
+  499  gedit .gitmodules
+  500  git rm --cached vendor/bundles/Biplane
+  501  rm -rf  --cached vendor/bundles/Biplane
+  502  rm -rf vendor/bundles/Biplane
+  503  gedit .gitmodules
+  504  php app/console doctrine:schema:update --force
+  505  php app/console doctrine:generate:entities ShaduliSiteBundle
+  506  php app/console doctrine:schema:update --force
+  507  php app/console doctrine:schema:update --force
+  508  php app/console doctrine:database:drop --force
+  509  php app/console doctrine:database:create --force
+  510  php app/console doctrine:database:create
+  511  php app/console doctrine:generate:entities ShaduliSiteBundle
+  512  php app/console doctrine:schema:create
+  513  php app/console doctrine:generate:entities ShaduliSiteBundle
+  514  php app/console doctrine:database:drop --force
+  515  php app/console doctrine:generate:entities ShaduliSiteBundle
+  516  php app/console doctrine:schema:update --force
+  517  php app/console doctrine:schema:create
+  518  php app/console doctrine:database:create
+  519  php app/console doctrine:schema:update --force
+  520  php app/console cache:clear
+  521  php app/console doctrine:generate:entities ShaduliSiteBundle
+  522  php app/console doctrine:schema:update --force
+  523  php app/console doctrine:generate:entities ShaduliSiteBundle
+  524  php app/console doctrine:schema:update --force
+  525  php app/console doctrine:generate:crud
+  526  php app/console doctrine:generate:entities ShaduliSiteBundle
+  527  php app/console doctrine:schema:update --force
+  528  php app/console doctrine:schema:drop
+  529  php app/console doctrine:schema:drop --force
+  530  php app/console doctrine:schema:create
+  531  php app/console doctrine:database:drop --force
+  532  php app/console doctrine:schema:create
+  533  php app/console doctrine:database:create
+  534  php app/console doctrine:schema:create
+  535  php app/console doctrine:schema:update --force
+  536  php app/console doctrine:generate:entities ShaduliSiteBundle
+  537  php app/console doctrine:schema:update --force
+  538  git submodule add -b 1.2.x git://github.com/FriendsOfSymfony/FOSUserBundle.git vendor/FOS/UserBundle
+  539  rm -rf vendor/FOS
+  540  rm -rf vendor/bundles/FOS
+  541  git rm --cached vendor/FOS
+  542  git rm --cached vendor/bundles/FOS
+  543  gedit .gitmodules
+  544  git submodule add -b 1.2.x git://github.com/FriendsOfSymfony/FOSUserBundle.git vendor/bundles/FOS/UserBundle
+  545  php app/console cache:clear
+  546  php app/console doctrine:schema:update --force
+  547  php app/console generate:bundle
+  548  php app/console doctrine:schema:update --force
+  549  git add .
+  550  git commit -am "fos user bundle installed"
+  551  git push origin master
+  552  git status
+  553  cd projects/ilythica/
+  554  cd ..
+  555  cd shaduli.com/
+  556  php app/console doctrine:
+  557  php app/console list
+  558  git reflog
+  559  git checkout -b repositories HEAD@{1}
+  560  git status
+  561  git add .
+  562  git commit -a -m "login templates added"
+  563  git checkout -b repositories HEAD@{1}
+  564  git checkout master
+  565  git add .
+  566  git commit -a -m repository classes added"
+  567  git commit -a -m "repository classes added"
+  568  git push origin master
+  569  cd projects/shaduli.com/
+  570  git pull origin master
+  571  php app/console cache:clear
+  572  git submodule init
+  573  git submodule update
+  574  php app/console cache:clear --env=prod
+  575  php app/console assets:install web
+  576  cd projects/shaduli.com/
+  577  php app/console cache:clear
+  578  php app/console assets:install web
+  579  php app/console cache:clear
+  580  php app/console assets:install web
+  581  php app/console cache:clear
+  582  php app/console assets:install web
+  583  php app/console cache:clear
+  584  php app/console assets:install web
+  585  php app/console cache:clear
+  586  php app/console assets:install web
+  587  php app/console cache:clear
+  588  php app/console assets:install web
+  589  php app/console cache:clear
+  590  php app/console assets:install web
+  591  php app/console cache:clear
+  592  php app/console assets:install web
+  593  php app/console cache:clear
+  594  git add .
+  595  git commit -a -m "twitter bootstrap"
+  596  git push origin master
+  597  cd projects/ilythica/
+  598  cd ..
+  599  cd shaduli.com/
+  600  git status
+  601  git checkout vendor/KnpMenu
+  602  cd /etc/apache2/sites-available/
+  603  ls
+  604  cp wp timetrex
+  605  sudo cp wp timetrex
+  606  sudo gedit timetrex
+  607  sudo a2ensite timetrex
+  608  sudo service apache2 reload
+  609  sudo gedit /etc/hosts
+  610  cd
+  611  cd projects/timetrex/
+  612  ls
+  613  sudo chown -R shaduli:www-data templates_c
+  614  sudo chmod -R 777 templates_c
+  615  sudo chown -R shaduli:www-data tmp
+  616  sudo chmod -R 777 tmp
+  617  sudo chown shaduli:www-data timetrex.ini.php
+  618  sudo chmod -R 777 log
+  619  sudo chown -R shaduli:www-data log
+  620  sudo chown -R shaduli:www-data storage
+  621  sudo chmod -R 777 storage
+  622  cd
+  623  gedit .ssh/id_rsa.pub 
+  624  cd projects/
+  625  git clone git://github.com/mshaduli/SimpleAdminGeneratorBundle.git
+  626  git clone git://github.com/alicomo/sf2admin.git
+  627  cd projects/shaduli.com/
+  628  git add .
+  629  git commit -am "boostrap continuing"
+  630  git push origin master
+  631  cd projects/sf2admin/
+  632  ls
+  633  cd app/
+  634  ls
+  635  cd ..
+  636  vendor/bundles/Sensio/Bundle/DistributionBundle/Resources/bin/build_bootstrap.php
+  637  cd app/
+  638  ls
+  639  cd ..
+  640  cd vendor/
+  641  ls
+  642  cd ..
+  643  php app/console doctrine:generate:admin
+  644  cd ..
+  645  cd admingenerator/
+  646  rm -rf app/cache/*
+  647  rm -rf app/logs/*
+  648  php app/console cache:clear
+  649  php app/console generate:bundle
+  650  cd ../shaduli.com/
+  651  git push origin master
+  652  ping 10.248.106.239
+  653  ping 10.248.18.208
+  654  cd Downloads/
+  655  ssh -i mycloud.pem root@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  656  chmod 400 mycloud.pem
+  657  ssh -i mycloud.pem root@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  658  ssh root@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  659  ssh -i mycloud root@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  660  cd
+  661  ssh root@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  662  cd ec2/
+  663  ssh root@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  664  ssh -i pk-R2CS4JM3SOF2DL236EUGXN23R4NPN4BN.pem root@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  665  chmod 777 mycloud.pem
+  666  chmod 400 mycloud.pem
+  667  ssh -i mycloud.pem root@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  668  ssh -i mycloud.pem ubuntu@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  669  history
+  670  clear
+  671  ssh -i mycloud.pem root@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  672  ssh -i mycloud.pem ubuntu@ec2-50-112-221-20.us-west-2.compute.amazonaws.com
+  673  ssh ubuntu@10.248.18.208
+  674  ssh -i mycloud.pem ubuntu@10.248.18.208
+  675  ssh -i mycloud.pem ubuntu@50-112-221-20
+  676  ssh -i mycloud.pem ubuntu@50.112.221.20
+  677  ssh ubuntu@50.112.221.20
+  678  ssh root@54.245.125.69
+  679  ssh root@shaduli.com
+  680  ssh root@173.0.55.208
+  681  scp root@shaduli.com:/var/named/host.shaduli.com.db
+  682  scp root@shaduli.com:/var/named/host.shaduli.com.db .
+  683  scp root@shaduli.com:/var/named/ns1.shaduli.com.db .
+  684  scp root@shaduli.com:/var/named/ns2.shaduli.com.db .
+  685  gedit host.shaduli.com.db 
+  686  ssh root@54.245.125.69
+  687  cd projects/admingenerator/
+  688  php app/console doctrine:generate:admin
+  689  rm -rf app/cache/*
+  690  php app/console doctrine:generate:admin
+  691  php app/console doctrine:generate:entity
+  692  php app/console doctrine:generate:admin
+  693  php app/console cc
+  694  php app/console cache:clear
+  695  php app/console doctrine:generate:admin
+  696  php app/console cache:clear
+  697  php app/console doctrine:generate:admin
+  698  git init
+  699  gedit .gitignore
+  700  git add .
+  701  git commit -a -m "first commit"
+  702  git push -u origin master
+  703  git remote add origin git@github.com:mshaduli/admingenerator.git
+  704  git push -u origin master
+  705  git remote rm origin
+  706  git remote add origin git@bitbucket.com:shaduli/admingenerator.git
+  707  git push -u origin master
+  708  git remote rm origin
+  709  git remote add origin git@bitbucket.org:shaduli/admingenerator.git
+  710  git push -u origin master
+  711  cd
+  712  gedit .ssh/id_rsa.pub 
+  713  cd projects/shaduli.com/
+  714  gedit .gitignore 
+  715  cd
+  716  gedit .ssh/id_rsa.pub 
+  717  cd projects/admingenerator/
+  718  php app/console doctrine:generate:admin
+  719  php app/console cache:clear
+  720  php app/console doctrine:generate:admin
+  721  php app/console cache:clear
+  722  php app/console doctrine:generate:admin
+  723  rm -rf app/cache/*
+  724  php app/console cache:clear
+  725  php app/console doctrine:generate:admin
+  726  php app/console cache:clear
+  727  php app/console doctrine:generate:admin
+  728  git status
+  729  git add.
+  730  git add .
+  731  git commit -am "theme configuration completed"
+  732  git push origin master
+  733  cd projects/admingenerator/
+  734  php app/console generate:bundle
+  735  php app/console generate:entity
+  736  php app/console doctrine:generate:entity
+  737  git add .
+  738  git commit -am "skeleton templates wip"
+  739  git push origin master
+  740  cd /etc/apache2/sites-enabled/
+  741  ls
+  742  cp wp ui
+  743  sudo cp wp ui
+  744  sudo gedit ui
+  745  sudo a2ensite ui
+  746  sudo gedit ui
+  747  sudo a2ensite ui
+  748  ls
+  749  sudo cp ui ../sites-available/
+  750  rm -rf ui
+  751  sudo rm -rf ui
+  752  sudo rm -rf ui~
+  753  sudo a2ensite ui
+  754  sudo service apache2 reload
+  755  sudo gedit /etc/hosts
+  756  ifconfig
+  757  sudo apt-get update
+  758  sudo apt-get install bridge-utils
+  759  sudo gedit /etc/network/interfaces
+  760  sudo /etc/init.d/networking restart
+  761  sudo gedit /etc/network/interfaces
+  762  sudo /etc/init.d/networking restart
+  763  sudo apt-get install ntp
+  764  sudo gedit /etc/ntp.conf
+  765  sudo service ntp restart
+  766  sudo apt-get install mysql-server python-mysqldb
+  767  sudo gedit /etc/mysql/my.cnf
+  768  sudo restart mysql
+  769  sudo service mysql restart
+  770  sudo mysql -uroot -pmygreatsecret -e 'CREATE DATABASE nova;'
+  771  sudo mysql -uroot -pilluali -e 'CREATE DATABASE nova;'
+  772  sudo mysql -uroot -pilluali -e 'CREATE USER novadbdmin;'
+  773  sudo mysql -uroot -pilluali -e 'GRANT ALL PRIVILEGES ON nova.* TO 'novadbadmin'@'%';'
+  774  sudo mysql -uroot -pilluali -e "GRANT ALL PRIVILEGES ON nova.* TO 'novadbadmin'@'%';"
+  775  sudo mysql -uroot -pilluali -e "SET PASSWORD FOR 'novadbadmin'@'%' = PASSWORD('novasecret');"
+  776  sudo mysql -uroot -pilluali -e "CREATE DATABASE glance;"
+  777  sudo mysql -uroot -pilluali -e "CREATE USER glancedbadmin;"
+  778  sudo mysql -uroot -pilluali -e "GRANT ALL PRIVILEGES ON glance.* TO 'glancedbadmin'@'%';"
+  779  sudo mysql -uroot -pilluali -e "SET PASSWORD FOR 'glancedbadmin'@'%' = PASSWORD('glancesecret');"
+  780  sudo mysql -uroot -pilluali -e "CREATE DATABASE keystone;"
+  781  sudo mysql -uroot -pilluali -e "CREATE USER keystonedbadmin;"
+  782  sudo mysql -uroot -pilluali -e "GRANT ALL PRIVILEGES ON keystone.* TO 'keystonedbadmin'@'%';"
+  783  sudo mysql -uroot -pilluali -e "SET PASSWORD FOR 'keystonedbadmin'@'%' = PASSWORD('keystonesecret');"
+  784  sudo apt-get install keystone python-keystone python-keystoneclient
+  785  sudo gedit /etc/network/interfaces
+  786  sudo /etc/init.d/networking restart
+  787  sudo gedit /etc/network/interfaces
+  788  sudo apt-get remove ntp
+  789  ping google.com
+  790  cd projects/admingenerator/
+  791  gedit /etc/hosts
+  792  php app/console generate:bundle
+  793  php app/console doctrine:generate:entity
+  794  php app/console doctrine:generate:admin
+  795  php app/console cache:clear
+  796  php app/console doctrine:generate:admin
+  797  php app/console doctrine:generate:entity
+  798  php app/console doctrine:generate:admin
+  799  git add .
+  800  git commit -a -m "added index skeleton"
+  801  git push origin master
+  802  ls -l web
+  803  ls -l web/bundles/
+  804  php app/console asset:install web --symlink
+  805  php app/console assets:install web --symlink
+  806  ls -l web/bundles/
+  807  php app/console doctrine:generate:admin
+  808  php app/console doctrine:database:create
+  809  php app/console doctrine:schema:create
+  810  php app/console doctrine:schema:update --force
+  811  php app/console doctrine:schema:drop --force
+  812  php app/console doctrine:schema:update --force
+  813  php app/console doctrine:schema:update --cmplete
+  814  php app/console doctrine:schema:update --complete
+  815  php app/console doctrine:schema:create
+  816  php app/console cache:clear
+  817  php app/console doctrine:schema:create
+  818  php app/console doctrine:generte:entities
+  819  php app/console doctrine:generate:entities
+  820  php app/console doctrine:generate:entities ShaduliSiteBundle
+  821  php app/console doctrine:generate:entities ShaduliTestBundle
+  822  php app/console doctrine:schema:create
+  823  cd
+  824  cd /etc/apache2/sites-available/
+  825  ls
+  826  cp shaduli.com ag
+  827  sudo cp shaduli.com ag
+  828  sudo gedit ag
+  829  sudo a2ensite ag
+  830  sudo service apache2 reload
+  831  sudo gedit /etc/hosts
+  832  cd /etc/apache2/sites-available/
+  833  ls
+  834  cp shaduli.com shaduli
+  835  sudo cp shaduli.com shaduli
+  836  ls
+  837  sudo gedit shaduli
+  838  sudo a2ensite shaduli
+  839  sudo service apache2 reload
+  840  sudo gedit /etchosts
+  841  sudo gedit /etc/hosts
+  842  cd
+  843  cd projects/mywebsite/
+  844  php app/check.php 
+  845  sudo apt-get install php5-apc
+  846  sudo pecl install apc
+  847  curl -s https://getcomposer.org/installer | php
+  848  php composer.phar install
+  849  curl -s https://getcomposer.org/installer | php
+  850  php composer.phar install
+  851  php composer.phar install --dry-run
+  852  php composer.phar install
+  853  cd
+  854  cd .local/share/
+  855  ls
+  856  ls -l Trash/
+  857  cd
+  858  curl -s https://getcomposer.org/installer | php
+  859  cd projects/mywebsite/
+  860  php composer.phar install
+  861  php ../../composer.phar install
+  862  php ../../composer.phar install --dev
+  863  cd
+  864  cd /etc/php5/cli/php.ini
+  865  sudo gedit /etc/php5/cli/php.ini
+  866  sudo gedit /etc/php5/apache2/php.ini
+  867  sudo gedit /etc/php5/cli/php.ini
+  868  sudo apt-get install php5-curl
+  869  php -m
+  870  php -dallow_url_fopen=1
+  871  php --ini
+  872  cd projects/mywebsite/
+  873  ../../composer.phar install
+  874  ../../composer.phar update
+  875  ../../composer.phar install
+  876  curl -s https://getcomposer.org/installer | php
+  877  ls -l
+  878  cd
+  879  cd projects/mywebsite/
+  880  ls
+  881  ../../composer.phar install
+  882  cd projects/msad/
+  883  ./symfony doc:generate-module default
+  884  ./symfony doc:generate-module frontend default
+  885  ./symfony generate-module frontend default
+  886  ./symfony generate:module frontend default
+  887  ./symfony cc
+  888  cd projects/ilythica/
+  889  git add .
+  890  git commit -a -m "changes to css"
+  891  cd ..
+  892  cd msad/
+  893  git add .
+  894  git commit -a -m "changes to css"
+  895  git push origin master
+  896  cd projects/msad
+  897  ./symfony generate:module frontend sample
+  898  gedit /etc/apache2/sites-enabled/msad 
+  899  cd
+  900  cd projects/ilythica/
+  901  git branch
+  902  git checkout master
+  903  git pull origin master
+  904  ./symfony doc:build --all --and-load
+  905  ./symfony cc
+  906  cd /etc/apache2/sites-available/
+  907  ls
+  908  gedit msad
+  909  sudo gedit sfblog
+  910  ls
+  911  sudo a2ensite sfblog
+  912  sudo gedit sfblog
+  913  sudo service apache2 reload
+  914  sudo gedit /etc/hosts
+  915  cd projects/ilythica/
+  916  cd ..
+  917  cd msad/
+  918  git stash
+  919  cd
+  920  cd projects/
+  921  git clone git@github.com:alicomo/sfblog.git
+  922  cd sfblog/
+  923  php lib/vendor/symfony/data/bin/symfony generate:project
+  924  php lib/vendor/symfony/data/bin/symfon
+  925  ./symfony cc
+  926  ./symfony configure:database mysql:"host=localhost;dbname=sfblog" root illuali
+  927  clear
+  928  history > sfnew.txt
+  929  gedit sfnew.txt
+  930  ./symfony generate:app frontend
+  931  ./symfony cc
+  932  clear
+  933  history > ~/sfinstall.txt
+  934  ./symfony generate:app admin
+  935  rm -rf cache/*
+  936  ./symfony project:permissions
+  937  ./symfony list
+  938  ./symfony help plugin
+  939  ./symfony help plugin:install
+  940  ./symfony help generate:project
+  941  ./symfony plugin:install sfDoctrineGuardPlugin
+  942  ./symfony doctrine:build --all --and-load
+  943  ./symfony cc
+  944  ./symfony guard:create-user 
+  945  ./symfony guard:create-user --is-super-admin ali@shaduli.com ali pass
+  946  ./symfony doc:build --all --and-load
+  947  ./symfony cc
+  948  symfony plugin:install sfRedminishAdminPlugin
+  949  ./symfony plugin:install sfRedminishAdminPlugin
+  950  ./symfony plugin:install sfRedminishAdminPlugin  --stability=beta
+  951  ./symfony cc
+  952  symfony plugin:publish-assets
+  953  ./symfony plugin:publish-assets
+  954  ./symfony cc
+  955  ./symfony guard:create-user --is-super-admin ali@shaduli.com ali pass
+  956  ./symfony doc:generate-admin admin --module="category" Category 
+  957  ./symfony cc
+  958  git add .
+  959  git commit -am "scaffolding finished"
+  960  git push origin master
+  961  cd
+  962  gedit sfinstall.txt 
+  963  history > newcommands.txt
+  964  gedit newcommands.txt 
+  965  cd projects/sfblog/
+  966  ./symfony cc
+  967  ./symfony plugin:publish-assets
+  968  ./symfony cc
+  969  cd
+  970  cd projects/
+  971  git clone git@github.com:alicomo/ciev2.git
+  972  cd sfblog/
+  973  ./symfony cc
+  974  ./symfony doctrine:build --all --and-load
+  975  ./symfony cc
+  976  ./symfony guard:create-user --is-super-admin ali@shaduli.com ali pass
+  977  ./symfony cc
+  978  git add .
+  979  git commit -a -m "day 2 changes"
+  980  git push origin master
+  981  ./symfony doctrine:generate-admin --module=post Post 
+  982  ./symfony doctrine:generate-admin admin --module=post Post 
+  983  ./symfony doctrine:data-dump
+  984  ./symfony doc:build --all --and-load
+  985  ./symfony cc
+  986  ./symfony doc:build --all --and-load
+  987  ./symfony plugin:install sfFormExtraPlugin
+  988  ./symfony publish-assets
+  989  ./symfony plugin:publish-assets
+  990  ./symfony cc
+  991  git add .
+  992  git commit -a -m "end of day 02"
+  993  git push origin master
+  994  cd projects/
+  995  git clone git@github.com:alicomo/gsa.git
+  996  sudo apt-get install pdfedit
+  997  cd projects/sfblog/
+  998  ./symfony cc
+  999  cd ..
+ 1000  svn checkout http://svn.jobeet.org/doctrine
+ 1001  sudo apt-get install subversion
+ 1002  svn checkout http://svn.jobeet.org/doctrine
+ 1003  cd sfblog/
+ 1004  ./symfony plugin:install sfAdminThemejRollerPlugin
+ 1005  ./symfony plugin:install sfAdminThemejRollerPlugin --stability=beta
+ 1006  ./symfony cc
+ 1007  ./symfony plugin:publish-assets
+ 1008  ./symfony cc
+ 1009  rm -rf cache/*
+ 1010  ./symfony cc
+ 1011  rm -rf cache/*
+ 1012  ./symfony cc
+ 1013  rm -rf cache/*
+ 1014  ./symfony cc
+ 1015  ./symfony doc:build --all --and-load
+ 1016  ./symfony cc
+ 1017  ./symfony guard:create-user ali@shaduli.com zend pass
+ 1018  ./symfony guard:create-user ali@shaduli2.com zend pass
+ 1019  ./symfony cc
+ 1020  ./symfony generate:module admin default
+ 1021  php test:functional admin categoryActions
+ 1022  ./symfony test:functional admin categoryActions
+ 1023  ./symfony cc
+ 1024  history > command.txt

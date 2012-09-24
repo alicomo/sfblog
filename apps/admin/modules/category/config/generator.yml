@@ -20,10 +20,8 @@ generator:
         display: [name, created_at, author]
         object_actions:
           _edit: ~
-          _deactivate: ~
-        actions: 
-          _add_category: { label: Add Category, action: new }
-          _export: { action: export }
+          _activate: { action: activate }
+        actions: ~
         max_per_page: 5
         table_method: getAllWithoutSymfony
       filter:  

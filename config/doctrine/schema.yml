@@ -5,7 +5,8 @@ actAs:
     
 Category:
   columns:
-    name: { type: string(255), notblank: true }
+    name: { type: string(25), notblank: true, regexp: '/^[a-zA-Z]+$/' }
+    is_active: { type: boolean, default: false }
     
 Post:
   columns:

@@ -10,9 +10,14 @@
  */
 abstract class Base<?php echo ucfirst($this->getModuleName()) ?>GeneratorHelper extends sfModelGeneratorHelper
 {
-  public function getUrlForAction($action)
+  public function getUrlForAction($action, $is_custom = false)
   {
-    return 'list' == $action ? '<?php echo $this->params['route_prefix'] ?>' : '<?php echo $this->params['route_prefix'] ?>_'.$action;
+    if($is_custom == true) {
+        return '<?php echo $this->params['route_prefix'] ?>/'.$action;
+    }
+    else {
+        return 'list' == $action ? '<?php echo $this->params['route_prefix'] ?>' : '<?php echo $this->params['route_prefix'] ?>_'.$action;
+    }
   }
   
   public function linkToNew($params)
@@ -20,6 +25,13 @@ abstract class Base<?php echo ucfirst($this->getModuleName()) ?>GeneratorHelper 
     if (!key_exists('icon', $params)) $params['icon'] = 'add';
     $params['params']['class'] = 'icon icon-add';
     return link_to(__($params['label'] , array(), 'sf_admin'), '@'.$this->getUrlForAction('new'), $params['params']).'</li>';
+  }
+  
+  public function linkToExport($params)
+  {
+    if (!key_exists('icon', $params)) $params['icon'] = 'add';
+    $params['params']['class'] = 'icon icon-add';
+    return link_to(__($params['label'] , array(), 'sf_admin'), $this->getUrlForAction('export', true), $params['params']).'</li>';
   }
   
   public function linkToDelete($object, $params)

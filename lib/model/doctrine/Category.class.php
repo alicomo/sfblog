@@ -16,4 +16,18 @@ class Category extends BaseCategory
     {
         return $this->getCreator();
     }
+    
+    public function postInsert($event)
+    {
+        $message =  sfContext::getInstance()->getMailer()->compose()->setFrom(array(sfConfig::get('app_invoice_mailer_email') => sfConfig::get('app_invoice_mailer_name')))
+            ->setTo($pTo)
+            ->setSubject($pSubjetc)->setBody($pBody)->setContentType('text/html');
+        sfContext::getInstance()->getMailer()->send($message);
+        
+        $message = sfContext::getInstance()->getMailer()->compose()->setFrom('shadulionweb@gmail.com')->setTo('shaduli.vanimal@gmail.com')
+                ->setSubject('Mastering Symfony and Doctrine')
+                ->setBody('Hi Thank you for attending training');
+        sfContext::getInstance()->getMailer()->send($message);
+                
+    }
 }

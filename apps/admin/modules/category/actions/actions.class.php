@@ -56,5 +56,40 @@ class categoryActions extends autoCategoryActions
     return $this->renderText(json_encode($category->toArray()));  
 
   }
+  
+  public function executeExample(sfWebRequest $request) {
+      $category = $this->getRoute()->getObject();
+      print_r($category->toArray());exit;
+  }
+  
+  public function executeActivate(sfWebRequest $request) 
+  {
+      $category = $this->getRoute()->getObject();
+      if($this->getUser()->getAttribute('activated_categories') == null) {
+          $i = 0;
+      }else {
+          $i = $this->getUser()->getAttribute('activated_categories');
+      }
+      if($this->getUser()->isSuperAdmin()) {
+          $this->getUser()->setAttribute('activated_categories', $i+1);
+          $category->setIsActive(true);
+          $category->save();
+      }
+      
+      
+      
+      
+      if($category->getIsActive() && $this->getUser()->isSuperAdmin()) {
+          $this->getUser()->setFlash('notice', 'Selected category has been activated. Total item: '.$this->getUser()->getAttribute('activated_categories'));
+      }
+      else if(!$this->getUser()->isSuperAdmin()){
+          $this->getUser()->setFlash('error', 'You cant do it');
+      }
+      else {
+          $this->getUser()->setFlash('error', 'Opps');
+      }
+      
+      $this->redirect('@category');
+  }
 
 }
